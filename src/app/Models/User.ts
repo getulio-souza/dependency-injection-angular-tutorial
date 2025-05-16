@@ -9,7 +9,7 @@ export class User{
     this.status = status;
   }
 
-  name: stirng;
+  name: string;
   gender: string;
   subType: string;
   status: string;

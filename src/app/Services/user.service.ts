@@ -7,4 +7,13 @@ export class UserService{
     new User('Getulio Souza 3', 'Male', `Monthly`, 'Active'),
     new User('Getulio Souza 4', 'Male', `Yearly`, 'Inactive'),
   ]
+
+  getallUsers() {
+    return this.users;
+  }
+
+  createUser(name: string, gender: string, subType: string, status: string) {
+    let user = new User(name, gender, subType, status);
+    this.users.push(user)
+  }
 }
